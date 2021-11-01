@@ -1,0 +1,1 @@
+module.exports.NOTES = require('./Notes');

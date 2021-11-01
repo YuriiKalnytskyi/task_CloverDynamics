@@ -1,0 +1,52 @@
+.modal {
+    width: 100%;
+    height: 830px;
+    /*height: 730px;*/
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.1s;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal_content {
+    padding: 20px;
+    border-radius: 15px;
+    border: 5px solid lightgrey;
+    background: #babece;
+    width: 200px;
+    height: 200px;
+    transform: scale(0.5);
+    transition: 0.1s,all;
+}
+.modal_content.active{
+    transform: scale(1);
+}
+.labelClass{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.inputClass{
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+}
+.btn_class{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
